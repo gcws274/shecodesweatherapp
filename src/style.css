@@ -1,0 +1,62 @@
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  padding: auto;
+  font-size: 12px;
+  text-align: center;
+}
+h3 {
+  font-size: 12px;
+}
+.cardBorder {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+.searchbar {
+  margin: 10px;
+  font-size: 12px;
+  background-color: aquamarine;
+}
+.currentcity {
+  margin: 10px;
+  font-size: 12px;
+}
+.currentTemp {
+  font-size: 20px;
+}
+.tempConvert {
+  font-size: 12px;
+  top: -12px;
+  position: relative;
+}
+.forcast {
+  margin: 5px;
+  font-size: 12px;
+  padding: 10px;
+}
+.deg2 {
+  font-size: 12px;
+  top: -5px;
+  position: relative;
+}
+.weatheremoji1 {
+  font-size: 80px;
+}
+.input-group-append {
+  background-color: white;
+}
+.todaysWeather {
+  font-size: 12px;
+}
+.time {
+  color: rgb(39, 31, 112);
+}
+.weatheremoji {
+  font-size: 20px;
+}
+.card-title {
+  font-size: 12px;
+}
