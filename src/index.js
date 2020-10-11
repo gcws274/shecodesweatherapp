@@ -22,7 +22,7 @@ function updateCity(response) {
   let humidper = document.querySelector("#humidity-per");
   humidper.innerHTML = humidity;
 }
-function location(coordinatepos) {
+function getlocation(coordinatepos) {
   let currentDate = now.getDate();
   let currentMonth = months[now.getMonth()];
   let curretHour = now.getHours();
@@ -48,7 +48,7 @@ function location(coordinatepos) {
   axios.get(tempLocImperial).then(updateCity);
 }
 function updateToCurrentCity() {
-  navigator.geolocation.getCurrentPosition(location);
+  navigator.geolocation.getCurrentPosition(getlocation);
 }
 
 // update city from user
@@ -89,7 +89,7 @@ let months = [
   "Sep",
   "Oct",
   "Nov",
-  "Dec",
+  "Dec"
 ];
 //search engine, when searching for a city
 let cityInput = document.querySelector("#city-search-form");

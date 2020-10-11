@@ -13,74 +13,226 @@
 </head>
 
 <body>
-    <br>
     <div class="container weatherapp">
         <div class="card cardBorder">
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand"></a>
-                <form class="form-inline" id="city-search-form">
-                    <input class="form-control mr-sm-4" type="search" id="city-input" placeholder="Search for city"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    <button class="btn btn-outline-success" type="submit" id="current-city">Current City</button>
-                </form>
-            </nav>
-            <h1 class="cityName" id="cityloc">
-                <strong>
-                    <class class="cityloc">Philadelphia</class>
-                </strong>
+            <h1>
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand"></a>
+                    <form class="form-inline" id="city-search-form">
+                        <input class="form-control mr-sm-4" type="search" id="city-input" placeholder="Search for city"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-success" type="submit" id="current-city">Current City</button>
+                    </form>
+                </nav>
             </h1>
-            <div class="card-body">
-                <div class="form-row">
-                    <div class="col currentDateShown currentcity">
-                        <h3>
-                            Today| Sep 11, 2020 | 1:57 PM
-                        </h3>
-                        <br />
-                        <span class="currentTemp" id="tempConvertId">20</span>
-                        <span class="tempConvert">
-                            <a href="#" id="f-conv"> &degF </a>|<a href="#" id="c-conv"> &degC
-                            </a>
-                        </span>
-                    </div>
-                    <div class="col">
-                        <div class="weatheremoji1" id="current-emoji">
-                            🌧
+            <h2 class="cityName" id="cityloc">
+                <strong> <class class="cityloc">Philadelphia</class> </strong>
+            </h2>
+            <h2>
+                <div class="card-body">
+                    <div class="form-row">
+                        <div class="col currentDateShown currentcity">
+                            <h3>
+                                Today| Sep 11, 2020 | 1:57 PM
+                            </h3>
+                            <span class="currentTemp" id="tempConvertId">20</span>
+                            <span class="tempConvert">
+                                <a href="#" id="f-conv"> &degF </a>|<a href="#" id="c-conv"> &degC
+                                </a>
+                            </span>
                         </div>
-                        <span class="currentDesc" id="current-desc">
-                            Mostly Cloudy
-                        </span>
-                        <br />
-                        ☔ :
-                        <span class="currentRain" id="current-rain">80</span>%
-                    </div>
-                    <div>
                         <div class="col">
-                            High:
-                            <span class="highTemp" id="high-temp">64</span>
-                            &degF|&degC
-                            <br />
-                            Low :
-                            <span class="lowTemp" id="low-temp">59</span>
-                            &degF|&degC
-                            <br />
-                            Wind :
-                            <span class="windS" id="wind-s">4.7</span>
-                            mph
-                            <br />
-                            Humidity:
-                            <span class="humidityPer" id="humidity-per">72</span>
-                            %
+                            <div class="weatheremoji1" id="current-emoji">
+                                🌧
+                            </div>
+                            <span class="currentDesc" id="current-desc">
+                                Mostly Cloudy
+                            </span>
+                            ☔ :
+                            <span class="currentRain" id="current-rain">80</span>%
+                        </div>
+                        <div>
+                            <div class="col">
+                                High:
+                                <span class="highTemp" id="high-temp">64</span>
+                                &degF|&degC
+                                <br />
+                                Low :
+                                <span class="lowTemp" id="low-temp">59</span>
+                                &degF|&degC
+                                <br />
+                                Wind :
+                                <span class="windS" id="wind-s">4.7</span>
+                                mph
+                                <br />
+                                Humidity:
+                                <span class="humidityPer" id="humidity-per">72</span>
+                                %
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row forcast">
+                <div class="row forcast">
+                    <div class="col">
+                        <div class="card todaysWeather">
+                            <div class="card-body">
+                                <h5 class="card-title" id="forcastCurrent">Sat | 9/11</h5>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="weatheremoji">🌧</div>
+                                        <p class="card-text">
+                                        <div class="time">
+                                            Time : 1PM
+                                        </div>
+                                        ☔ : 78%
+                                        </p>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="weatheremoji">🌧</div>
+                                        <p class="card-text">
+                                        <div class="time">
+                                            Time : 2PM
+                                        </div>
+                                        ☔ : 80%
+                                        </p>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="weatheremoji">⛈</div>
+                                        <p class="card-text">
+                                        <div class="time">
+                                            Time : 3PM
+                                        </div>
+                                        ☔ : 82%
+                                        </p>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="weatheremoji">🌦</div>
+                                        <p class="card-text">
+                                        <div class="time">
+                                            Time : 4PM
+                                        </div>
+                                        ☔ : 60%
+                                        </p>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="weatheremoji">☀</div>
+                                        <p class="card-text">
+                                        <div class="time">
+                                            Time : 5PM
+                                        </div>
+                                        ☔ : 0%
+                                        </p>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="weatheremoji">☀</div>
+                                        <p class="card-text">
+                                        <div class="time">
+                                            Time : 6PM
+                                        </div>
+                                        ☔ : 0%
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row forcast">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Sun | 9/12</h5>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="weatheremoji">🌤</div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text">
+                                            ☔ : 10%
+                                            <br />
+                                            High : 70 &deg F
+                                            <br />
+                                            Low : 62 &deg F
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Mon | 9/13</h5>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="weatheremoji">⛅</div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text">
+                                            ☔ : 0%
+                                            <br />
+                                            High: 65 &deg F
+                                            <br />
+                                            Low: 59 &deg F
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row forcast">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Tues | 9/14</h5>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="weatheremoji">😎</div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text">
+                                            ☔ : 0%
+                                            <br />
+                                            High : 80 &deg F
+                                            <br />
+                                            Low : 75 &deg F
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Wed | 9/15</h5>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="weatheremoji">⛈</div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text">
+                                            ☔ : 85%
+                                            <br />
+                                            High : 60 &deg F
+                                            <br />
+                                            Low : 58 &deg F
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </h2>
             <h3>
                 Coded by Gueil Wong- Shing
             </h3>
         </div>
     </div>
-</body>
     <script src="src/index.js"></script>
+</body>
+
 </html>
