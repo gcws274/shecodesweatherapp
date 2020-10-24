@@ -5,24 +5,64 @@ h1 {
   color: blue;
 }
 h2 {
-  padding: auto;
   font-size: 20px;
   text-align: center;
 }
 h3 {
   font-size: 20px;
+  padding: auto;
+}
+h4 {
+  font-size: 15px;
+}
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.weatherapp {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .cardBorder {
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
 }
 .searchbar {
-  margin: 20px;
-  font-size: 15px;
-  background-color: aquamarine;
+  margin: 10px;
+  color: black;
+}
+.searchButton {
+  margin: 10px;
+  color: black;
+  background-color: white;
+}
+.currentCutyButton {
+  margin: 10px;
+  color: black;
+  background-color: white;
+}
+.forecastButton {
+  margin: 10px;
+  color: black;
+  background-color: white;
+}
+.cityName {
+  font-size: 30px;
+  text-align: center;
 }
 .currentcity {
-  margin: 20px;
+  font-size: 20px;
+}
+.currentDesc {
   font-size: 15px;
+  color: rgb(37, 18, 18);
+}
+.tempSection {
+  padding-top: 30px;
 }
 .currentTemp {
   font-size: 60px;
@@ -32,31 +72,17 @@ h3 {
   top: -30px;
   position: relative;
 }
-.forcast {
-  margin: 5px;
-  font-size: 15px;
-  padding: 20px;
-}
-.deg2 {
-  font-size: 15px;
-  top: -5px;
-  position: relative;
-}
-.weatheremoji1 {
+.weatheremoji {
   font-size: 80px;
 }
-.input-group-append {
-  background-color: white;
+.todayDescrip {
+  padding-top: 20px;
 }
-.todaysWeather {
+.weatherForcastTime {
+  padding-top: 30px;
   font-size: 15px;
 }
-.time {
-  color: rgb(39, 31, 112);
-}
-.weatheremoji {
-  font-size: 50px;
-}
-.card-title {
-  font-size: 25px;
+.weatherForecast {
+  padding-top: 20px;
+  font-size: 15px;
 }
