@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gueil Weatherapp</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,700;1,300&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+    <div class="container weatherapp">
+        <div class="cardBorder">
+            <form class="form-inline" id="city-search-form">
+                <input class="form-control" type="search" id="city-input" placeholder="Search for city" aria-label="Search">
+                <button class="btn btn-outline-success searchButton" type="submit">Search</button>
+                <button class="btn btn-outline-success currentCutyButton" type="submit" id="current-city"
+                    value="Philadelphia">Current City</button>
+                <a class="btn btn-primary forecastButton" href="index.html" role="button">Today's Forecast</a>
+            </form>
+        </div>
+        <div id=" five-day-forecast forecast-days" class="row weekdays">
+        </div>
+        <h4>
+            <a href="https://github.com/gcws274/shecodesweatherapp.git">GitHub Open Source</a> by Gueil Wong- Shing
+        </h4>
+    </div>
+    <script src="src/fiveForcast.js"></script>
+</body>
+</html>

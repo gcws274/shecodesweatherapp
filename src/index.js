@@ -68,7 +68,7 @@ function updateCity(response) {
   updateDateAndTime(response.data.dt*1000)
   }
 //update five day forcast
-function dispalyForecast(response) {
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
@@ -88,6 +88,7 @@ function dispalyForecast(response) {
   `;
   }
 }
+
 // update city from user
 function citySearch(event) {
   event.preventDefault();
@@ -97,7 +98,8 @@ function citySearch(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(updateCity);
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityInput.value}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(dispalyForecast);
+  axios.get(apiUrl).then(displayForecast);
+  axios.get(apiUrl).then(displayForecastDays);
 }
 function getlocation(coordinatepos) {
   let lat = coordinatepos.coords.latitude;
@@ -110,19 +112,20 @@ function updateToCurrentCity() {
 }
 function displayF(event) {
   event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
+  celsiusL.classList.add("active");
+  fahrenheitL.classList.remove("active");
   let fahrenheiTemp = (celsiusTemp * (9/5)) + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheiTemp);
+  tempEl.innerHTML = Math.round(fahrenheiTemp);
 }
 
 function displayC(event) {
   event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
+  celsiusL.classList.remove("active");
+  fahrenheitL.classList.add("active");
   celsiusTemp = Math.abs((fahrenheiTemp - 32) * (5/9));
-  temperatureElement.innerHTML = Math.round(celsiusTemp);
+  tempEl.innerHTML = Math.round(celsiusTemp);
 }
+
 //search engine, when searching for a city
 let cityInput = document.querySelector("#city-search-form");
    cityInput.addEventListener("submit", citySearch);
@@ -132,12 +135,12 @@ let currentCityButton = document.querySelector("#current-city");
 currentCityButton.addEventListener("click", updateToCurrentCity);
 window.addEventListener('load', updateToCurrentCity)
 
-let temperatureElement = document.querySelector("#tempConvertId");
+let tempEl = document.querySelector("#tempConvertId");
 let fahrenheiTemp= null;
 let celsiusTemp =null;
 
-let fahrenheitLink = document.querySelector("#f-conv");
-fahrenheitLink.addEventListener("click", displayF);
+let fahrenheitL = document.querySelector("#f-conv");
+fahrenheitL.addEventListener("click", displayF);
 
-let celsiusLink = document.querySelector("#c-conv");
-celsiusLink.addEventListener("click", displayC);
+let celsiusL = document.querySelector("#c-conv");
+celsiusL.addEventListener("click", displayC);
