@@ -10,7 +10,6 @@ h2 {
 }
 h3 {
   font-size: 20px;
-  padding: auto;
 }
 h4 {
   font-size: 15px;
@@ -24,6 +23,7 @@ li {
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 800px;
 }
 .cardBorder {
   background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
@@ -56,16 +56,15 @@ li {
 }
 .currentcity {
   font-size: 20px;
+  padding-left: 50px;
 }
 .currentDesc {
-  font-size: 15px;
+  font-size: 20px;
   color: rgb(37, 18, 18);
-}
-.tempSection {
-  padding-top: 30px;
 }
 .currentTemp {
   font-size: 60px;
+  padding-left: auto;
 }
 .tempConvert {
   font-size: 20px;

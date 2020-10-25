@@ -21,8 +21,7 @@
                         <input class="form-control" type="search" id="city-input" placeholder="Search for city"
                             aria-label="Search">
                         <button class="btn btn-outline-success searchButton" type="submit">Search</button>
-                        <button class="btn btn-outline-success currentCutyButton" type="submit" id="current-city">Current City</button>
-                        <a class="btn btn-primary forecastButton" href="fiveForcast.html" role="button">Forecast</a>
+                        <button class="btn btn-outline-success currentCutyButton" type="submit" id="current-city" value="Philadelphia">Current City</button>
                     </form>
                 </nav>
             </h1>
@@ -32,7 +31,7 @@
                 </strong>
             </h2>
             <h2>
-                <div class="form-row">
+                <div class="form-row locationInfo">
                     <div class="col">
                         <div class="row currentDateShown currentcity" id="currentDisplay">
                             <h3>
@@ -40,11 +39,7 @@
                                 <br>
                             </h3>
                         </div>
-                        <div class="row">
-                            <span class="currentDesc" id="current-desc">
-                            Mostly Cloudy
-                        </span>
-                        <br>
+                        <div class="row-2">
                         <div class="tempSection">
                             <span class="currentTemp" id="tempConvertId">
                             </span>
@@ -54,14 +49,14 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-3 tempEmojiSec">
                         <h3>
-                            <span>
-                                <img src="" alt="" id="weather-emoji"/>
-                            </span>
-                            <br>
-                            ☔ :
-                            <span class="currentRain" id="current-rain">80</span>%
+                            <div class="row-2">
+                                <img src="" alt="" id="weather-emoji" />
+                            </div>
+                            <div class="row-2 currentDesc" id="current-desc">
+                                Mostly Cloudy
+                            </div>
                         </h3>
                     </div>
                     <div class="col todayDescrip">

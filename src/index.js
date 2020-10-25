@@ -91,9 +91,9 @@ function dispalyForecast(response) {
 // update city from user
 function citySearch(event) {
   event.preventDefault();
-  let cityLocation = document.querySelector("#cityloc");
+  let cityLoc = document.querySelector("#cityloc");
   let cityInput = document.querySelector("#city-input");
-  cityLocation.innerHTML = cityInput.value;
+  cityLoc.innerHTML = cityInput.value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(updateCity);
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityInput.value}&appid=${apiKey}&units=imperial`;
@@ -125,7 +125,7 @@ function displayC(event) {
 }
 //search engine, when searching for a city
 let cityInput = document.querySelector("#city-search-form");
-cityInput.addEventListener("submit", citySearch);
+   cityInput.addEventListener("submit", citySearch);
 
 //update to current city information
 let currentCityButton = document.querySelector("#current-city");
