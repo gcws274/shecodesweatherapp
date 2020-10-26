@@ -106,6 +106,8 @@ function getlocation(coordinatepos) {
   let lon = coordinatepos.coords.longitude;
   let tempLocImperial = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
   axios.get(tempLocImperial).then(updateCity);
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayForecast);
 }
 function updateToCurrentCity() {
   navigator.geolocation.getCurrentPosition(getlocation);
